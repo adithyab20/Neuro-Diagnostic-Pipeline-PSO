@@ -16,6 +16,17 @@ The architecture begins with data preparation, where raw MRI images are loaded, 
 ## 📊 Results & Performance
 The integration of Particle Swarm Optimization significantly outperformed the baseline classification approach by filtering out irrelevant imaging noise. The baseline accuracy using only the SVM classifier achieved 85.71%. By applying the PSO-enhanced feature selection, the model's accuracy improved to 93.75%. This demonstrates that intelligent feature selection not only improves computing efficiency but is critical for achieving the high accuracy thresholds required in healthcare analytics. For a comprehensive breakdown of the methodology and performance metrics, please refer to the `Brain_Tumor_Classification_Paper.pdf` located in the `docs/` directory.
 
+### Pipeline Action Shots
+
+**Malignant Tumor Classification (Showing 93.75% PSO Accuracy)**
+![Malignant Classification](images/malignant-classification.png)
+
+**Benign Tumor Classification**
+![Benign Classification](images/benign-classification.png)
+
+**PSO Convergence Curve during Model Training**
+![PSO Convergence](images/pso-convergence-curve.png)
+
 ## 📂 Data Architecture & Privacy
 To adhere to enterprise data engineering best practices and repository size limits, the full raw medical imaging dataset is not hosted directly within this repository. A strict `.gitignore` policy is enforced to keep the codebase lightweight and prevent binary bloat. A small subset of sample MRI images (Benign and Malignant) is provided in the `data/sample_mri/` directory for immediate testing and verification of the diagnostic pipeline. 
 
